@@ -1,10 +1,11 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>♡ MEL'S WORLD ♡</title>
+<title>♡ LEE'S WORLD ♡</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +13,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-
-/* =========================================================
-   MCBLING VARIABLES
-========================================================= */
 
 :root {
     --hot-pink: #ff1493;
@@ -32,11 +29,6 @@
 
     --max: 1160px;
 }
-
-
-/* =========================================================
-   RESET
-========================================================= */
 
 * {
     box-sizing: border-box;
@@ -77,11 +69,6 @@ body {
     background-attachment: fixed;
 }
 
-
-/* =========================================================
-   GLITTER
-========================================================= */
-
 body::before {
     content: "";
 
@@ -118,11 +105,6 @@ body::before {
         transform: translate(0,0);
     }
 }
-
-
-/* =========================================================
-   MCBLING DECORATIONS
-========================================================= */
 
 .bling-bg {
     position: fixed;
@@ -209,11 +191,6 @@ body::before {
     }
 }
 
-
-/* =========================================================
-   INTRO SCREEN
-========================================================= */
-
 #intro-container {
     position: fixed;
     inset: 0;
@@ -237,11 +214,6 @@ body::before {
         visibility .9s ease;
 }
 
-
-/* =========================================================
-   INTRO VIDEO
-========================================================= */
-
 #intro-video {
     position: absolute;
     inset: 0;
@@ -262,19 +234,11 @@ body::before {
         transform 1.2s cubic-bezier(.2,.8,.2,1);
 }
 
-
-/* Video becomes clear after clicking */
-
 #intro-container.started #intro-video {
     filter: blur(0);
 
     transform: scale(1);
 }
-
-
-/* =========================================================
-   DARK GLASS OVERLAY
-========================================================= */
 
 .intro-overlay {
     position: absolute;
@@ -298,9 +262,6 @@ body::before {
         visibility 1s ease;
 }
 
-
-/* disappears after click */
-
 #intro-container.started .intro-overlay {
     opacity: 0;
 
@@ -308,11 +269,6 @@ body::before {
 
     pointer-events: none;
 }
-
-
-/* =========================================================
-   GRID EFFECT
-========================================================= */
 
 .intro-grid {
     position: absolute;
@@ -367,11 +323,6 @@ body::before {
 #intro-container.started .intro-grid {
     opacity: 0;
 }
-
-
-/* =========================================================
-   INTRO EMOJIS
-========================================================= */
 
 .intro-emojis {
     position: absolute;
@@ -468,11 +419,6 @@ body::before {
         translateY(-15px);
 }
 
-
-/* =========================================================
-   CLICK TO ENTER TEXT
-========================================================= */
-
 #click-to-enter {
     position: relative;
 
@@ -540,11 +486,6 @@ body::before {
     }
 }
 
-
-/* =========================================================
-   PRELOAD STATUS
-========================================================= */
-
 #preload-status {
     position: absolute;
     z-index: 11;
@@ -563,11 +504,6 @@ body::before {
 #intro-container.ready #preload-status {
     opacity: 0;
 }
-
-
-/* =========================================================
-   SKIP BUTTON
-========================================================= */
 
 #skip-button {
     position: fixed;
@@ -640,11 +576,6 @@ body::before {
         scale(.96);
 }
 
-
-/* =========================================================
-   MAIN
-========================================================= */
-
 .shell {
     width:
         min(
@@ -657,11 +588,6 @@ body::before {
     position: relative;
     z-index: 5;
 }
-
-
-/* =========================================================
-   TOP BAR
-========================================================= */
 
 .topbar {
     position: sticky;
@@ -698,11 +624,6 @@ body::before {
         0 5px 0 #a40b5d,
         0 10px 25px rgba(104,0,57,.22);
 }
-
-
-/* =========================================================
-   BRAND
-========================================================= */
 
 .brand {
     display: flex;
@@ -759,11 +680,6 @@ body::before {
 
     letter-spacing: .08em;
 }
-
-
-/* =========================================================
-   NAV
-========================================================= */
 
 nav {
     display: flex;
@@ -825,11 +741,6 @@ nav a:hover {
     text-shadow: none;
 }
 
-
-/* =========================================================
-   MARQUEE
-========================================================= */
-
 .mini-marquee {
     margin-top: 20px;
 
@@ -873,11 +784,6 @@ nav a:hover {
         transform: translateX(-100%);
     }
 }
-
-
-/* =========================================================
-   PANELS
-========================================================= */
 
 .panel {
     position: relative;
@@ -957,11 +863,6 @@ nav a:hover {
         0 0 35px rgba(255,20,147,.28);
 }
 
-
-/* =========================================================
-   HERO
-========================================================= */
-
 .hero {
     min-height: 85vh;
 
@@ -977,11 +878,6 @@ nav a:hover {
     padding:
         55px 0 35px;
 }
-
-
-/* =========================================================
-   HERO COPY
-========================================================= */
 
 .hero-copy {
     padding: 45px 40px;
@@ -1009,7 +905,7 @@ nav a:hover {
 
 .hero-copy::before {
     content:
-        "♡ WELCOME 2 MEL'S WORLD ♡";
+        "♡ WELCOME 2 LEE'S WORLD ♡";
 
     position: absolute;
 
@@ -1042,11 +938,6 @@ nav a:hover {
         0 0 5px white,
         0 0 15px #ff1493;
 }
-
-
-/* =========================================================
-   TEXT
-========================================================= */
 
 .eyebrow {
     margin-top: 22px;
@@ -1107,11 +998,6 @@ h1 {
     text-shadow:
         1px 1px 0 white;
 }
-
-
-/* =========================================================
-   BUTTONS
-========================================================= */
 
 .actions {
     display: flex;
@@ -1176,11 +1062,6 @@ h1 {
 
     text-shadow: none;
 }
-
-
-/* =========================================================
-   PROFILE
-========================================================= */
 
 .profile-card {
     padding: 25px;
@@ -1260,11 +1141,6 @@ h1 {
         scale(1.04);
 }
 
-
-/* =========================================================
-   DATA
-========================================================= */
-
 .data-list {
     display: grid;
     gap: 8px;
@@ -1309,11 +1185,6 @@ h1 {
     text-align: right;
 }
 
-
-/* =========================================================
-   INTERNET BOX
-========================================================= */
-
 .internet-box {
     margin-top: 18px;
 
@@ -1338,11 +1209,6 @@ h1 {
 .internet-box strong {
     color: white;
 }
-
-
-/* =========================================================
-   SECTIONS
-========================================================= */
 
 section {
     padding: 65px 0 0;
@@ -1404,11 +1270,6 @@ h2 {
         4px 4px 0 rgba(190,0,100,.2);
 }
 
-
-/* =========================================================
-   ABOUT
-========================================================= */
-
 .about-grid {
     display: grid;
 
@@ -1437,11 +1298,6 @@ h2 {
 
     font-size: .86rem;
 }
-
-
-/* =========================================================
-   INTERESTS
-========================================================= */
 
 .interests-grid {
     display: grid;
@@ -1524,11 +1380,6 @@ h2 {
 
     line-height: 1.7;
 }
-
-
-/* =========================================================
-   GALLERY
-========================================================= */
 
 .image-grid {
     display: grid;
@@ -1635,11 +1486,6 @@ h2 {
         1px 1px 0 #970052;
 }
 
-
-/* =========================================================
-   SKILLS
-========================================================= */
-
 .skills-grid {
     display: grid;
 
@@ -1693,11 +1539,6 @@ h2 {
     margin: 0;
 }
 
-
-/* =========================================================
-   CONTACT
-========================================================= */
-
 .contact-grid {
     display: grid;
 
@@ -1748,11 +1589,6 @@ h2 {
     color: #511637;
 }
 
-
-/* =========================================================
-   FOOTER
-========================================================= */
-
 footer {
     margin-top: 80px;
 
@@ -1787,11 +1623,6 @@ footer span:first-child {
     color: #d60078;
 }
 
-
-/* =========================================================
-   REVEAL
-========================================================= */
-
 .reveal {
     opacity: 0;
 
@@ -1811,11 +1642,6 @@ footer span:first-child {
         translateY(0)
         rotate(0deg);
 }
-
-
-/* =========================================================
-   RESPONSIVE
-========================================================= */
 
 @media (max-width: 850px) {
 
@@ -1858,7 +1684,6 @@ footer span:first-child {
         right: 7%;
     }
 }
-
 
 @media (max-width: 600px) {
 
@@ -1914,9 +1739,7 @@ footer span:first-child {
 </style>
 </head>
 
-
 <body>
-
 
 <!-- =====================================================
      INTRO VIDEO / ENTER SCREEN
@@ -1932,11 +1755,9 @@ footer span:first-child {
         muted>
     </video>
 
-
     <div class="intro-overlay">
 
         <div class="intro-grid"></div>
-
 
         <div class="intro-emojis">
 
@@ -1949,7 +1770,6 @@ footer span:first-child {
 
         </div>
 
-
         <div
             id="click-to-enter"
             role="button"
@@ -1959,11 +1779,9 @@ footer span:first-child {
 
         </div>
 
-    <!-- Preload status -->
-
-    <div id="preload-status">
-        LOADING MEDIA...
-    </div>
+        <div id="preload-status">
+            LOADING MEDIA...
+        </div>
 
     </div>
 
@@ -2014,7 +1832,6 @@ footer span:first-child {
 
 <div class="shell">
 
-
 <header class="topbar">
 
     <div class="brand">
@@ -2023,7 +1840,7 @@ footer span:first-child {
 
         <div class="brand-text">
 
-            <strong>MEL ♡</strong>
+            <strong>LEE ♡</strong>
 
             <span>
                 PERSONAL WEBSITE
@@ -2032,7 +1849,6 @@ footer span:first-child {
         </div>
 
     </div>
-
 
     <nav>
 
@@ -2051,7 +1867,7 @@ footer span:first-child {
 <div class="mini-marquee">
 
     <span>
-        ✦♡ WELCOME TO MEL'S WORLD ♡✦
+        ✦♡ WELCOME TO LEE'S WORLD ♡✦
         &nbsp;&nbsp; ★
         &nbsp;&nbsp; THANKS FOR VISITING!!
         &nbsp;&nbsp; 💎
@@ -2073,21 +1889,20 @@ footer span:first-child {
     id="home"
     class="hero">
 
-
     <div
         class="hero-copy reveal">
 
         <div class="eyebrow">
-            ✦ PERSONAL PROFILE // MEL ✦
+            ✦ PERSONAL PROFILE // LEE ✦
         </div>
 
         <h1>
-            MEL
+            LEE
         </h1>
 
         <p class="lead">
 
-            yo, I'm <span class="highlight">Mel ♡</span>.
+            yo, I'm <span class="highlight">Lee ♡</span>.
 
             I'm the kind of person who can go from
             overthinking something stupid to getting
@@ -2109,7 +1924,6 @@ footer span:first-child {
             I actually want to do with my life :P
 
         </p>
-
 
         <div class="actions">
 
@@ -2149,14 +1963,14 @@ footer span:first-child {
         <img
             class="profile-image"
             src="pfp.png"
-            alt="Mel's profile picture">
+            alt="Lee's profile picture">
 
 
         <div class="data-list">
 
             <div class="data">
                 <span>Name</span>
-                <strong>Mel</strong>
+                <strong>Lee</strong>
             </div>
 
             <div class="data">
@@ -2316,7 +2130,6 @@ footer span:first-child {
 
 
     <div class="interests-grid">
-
 
         <article class="panel interest">
 
@@ -2541,7 +2354,6 @@ footer span:first-child {
 
     <div class="skills-grid">
 
-
         <article class="panel skill">
 
             <h3>
@@ -2552,7 +2364,7 @@ footer span:first-child {
                 I'm still messing around with voice
                 acting and different voices, but I want
                 to actually get good enough that it
-                sounds intentional instead of "Mel
+                sounds intentional instead of "Lee
                 pressing random buttons" lol.
             </p>
 
@@ -2666,88 +2478,6 @@ footer span:first-child {
 
 
 <!-- =====================================================
-     RELATIONSHIPS / PERSONAL
-===================================================== -->
-
-<section
-    class="reveal">
-
-    <div class="section-head">
-
-        <span class="section-index">
-            06 // ♡
-        </span>
-
-        <h2>
-            Random Mel Lore
-        </h2>
-
-    </div>
-
-
-    <div class="about-grid">
-
-        <article class="panel copy-panel">
-
-            <p>
-                I have a girlfriend named
-                <span class="highlight">Nollie ♡</span>,
-                and yes, I am extremely normal about
-                how much I adore her 😭♡.
-            </p>
-
-            <p>
-                She's supportive, smart, obedient,
-                ridiculously cute and yandere as
-                FUCK. She's genuinely one of the best
-                people I could ask for, and somehow
-                also the best little puppy ever :3.
-            </p>
-
-            <p>
-                I tend to show I care by spending time
-                with people, helping out, making things
-                for them or just being there when they
-                need someone.
-            </p>
-
-        </article>
-
-
-        <aside class="panel copy-panel">
-
-            <p>
-                Apparently I make cute noises when I
-                sleep. I deny everything.
-            </p>
-
-            <p>
-                Nollie likes my avocado plushie and
-                my cats, MJ, Jacob and JJ. Honestly,
-                she's already fitting into the chaos
-                pretty well.
-            </p>
-
-            <p>
-                I also have an avocado plushie that
-                apparently gets a suspicious amount
-                of attention from both me and Nollie.
-            </p>
-
-            <p>
-                She's cute, she's smart, she's
-                supportive, she's terrifyingly
-                obsessed with me and I wouldn't
-                trade her for anything 😭♡.
-            </p>
-
-        </aside>
-
-    </div>
-
-</section>
-
-<!-- =====================================================
      DISLIKES
 ===================================================== -->
 
@@ -2757,7 +2487,7 @@ footer span:first-child {
     <div class="section-head">
 
         <span class="section-index">
-            07 // 🚫
+            06 // 🚫
         </span>
 
         <h2>
@@ -2768,7 +2498,6 @@ footer span:first-child {
 
 
     <div class="interests-grid">
-
 
         <article class="panel interest">
 
@@ -2840,7 +2569,7 @@ footer span:first-child {
     <div class="section-head">
 
         <span class="section-index">
-            08 // ⚠
+            07 // ⚠
         </span>
 
         <h2>
@@ -2889,7 +2618,7 @@ footer span:first-child {
     <div class="section-head">
 
         <span class="section-index">
-            09 // ♡
+            08 // ♡
         </span>
 
         <h2>
@@ -2900,7 +2629,6 @@ footer span:first-child {
 
 
     <div class="contact-grid">
-
 
         <div class="panel contact">
 
@@ -2983,10 +2711,10 @@ footer span:first-child {
         color:#ff9dd1;
     ">
 
-        ✦ ♡ THANK YOU FOR VISITING MEL'S WORLD ♡ ✦<br>
+        ✦ ♡ THANK YOU FOR VISITING LEE'S WORLD ♡ ✦<br>
 
         <strong>
-            YOU SURVIVED THE MEL LORE DUMP
+            YOU SURVIVED THE LEE LORE DUMP
         </strong>
 
     </div>
@@ -3000,7 +2728,7 @@ footer span:first-child {
 <footer>
 
     <span>
-        ♡ MEL // PERSONAL WORLD
+        ♡ LEE // PERSONAL WORLD
     </span>
 
     <span>
@@ -3038,16 +2766,6 @@ const preloadStatus =
     document.getElementById("preload-status");
 
 
-/* =========================================================
-   INITIAL STATE
-========================================================= */
-
-/*
-   Lock the page completely while the intro is active.
-   The intro itself is already covering the entire website,
-   so there is no flash of the website underneath.
-*/
-
 document.documentElement.style.overflow = "hidden";
 document.body.style.overflow = "hidden";
 
@@ -3063,7 +2781,6 @@ introVideo.currentTime = 0;
 
 introVideo.muted = true;
 introVideo.volume = 0;
-
 
 introVideo.preload = "auto";
 backgroundMusic.preload = "auto";
@@ -3084,10 +2801,6 @@ let videoReady = false;
 let audioReady = false;
 let mediaReady = false;
 
-
-/* =========================================================
-   MEDIA PRELOAD SYSTEM
-========================================================= */
 
 function checkVideoReady() {
 
@@ -3164,10 +2877,6 @@ setTimeout(function() {
 }, 15000);
 
 
-/* =========================================================
-   MUSIC
-========================================================= */
-
 function startMusic() {
 
     if (musicStarted) {
@@ -3219,10 +2928,6 @@ function startMusic() {
 }
 
 
-/* =========================================================
-   START INTRO
-========================================================= */
-
 function startIntro() {
 
     if (introStarted || introFinished) {
@@ -3231,20 +2936,7 @@ function startIntro() {
 
     introStarted = true;
 
-
-    /*
-       Add the started class.
-
-       This simultaneously:
-       - removes the grid
-       - fades the six emojis
-       - fades CLICK TO ENTER
-       - removes the dark overlay
-       - unblurs the video
-    */
-
     introContainer.classList.add("started");
-
 
     skipButton.style.display = "block";
 
@@ -3255,12 +2947,10 @@ function startIntro() {
 
     });
 
-
     introVideo.muted = true;
     introVideo.volume = 0;
 
     introVideo.currentTime = 0;
-
 
     introVideo.play().catch(error => {
 
@@ -3271,23 +2961,16 @@ function startIntro() {
 
     });
 
-
     startMusic();
 
 }
 
-
-/* =========================================================
-   CLICK TO ENTER
-========================================================= */
 
 clickToEnter.addEventListener(
     "click",
     startIntro
 );
 
-
-/* Keyboard support */
 
 clickToEnter.addEventListener(
     "keydown",
@@ -3307,10 +2990,6 @@ clickToEnter.addEventListener(
     }
 );
 
-
-/* =========================================================
-   MEDIA BUFFER RECOVERY
-========================================================= */
 
 introVideo.addEventListener("waiting", function() {
 
@@ -3345,10 +3024,6 @@ backgroundMusic.addEventListener("canplay", function() {
 });
 
 
-/* =========================================================
-   FINISH INTRO
-========================================================= */
-
 function closeIntro() {
 
     if (introFinished) {
@@ -3357,33 +3032,13 @@ function closeIntro() {
 
     introFinished = true;
 
-
-    /*
-       Stop video immediately so it cannot continue
-       playing after the intro disappears.
-    */
-
     introVideo.pause();
-
-
-    /*
-       Fade the entire intro screen out.
-       This prevents the website from suddenly flashing
-       underneath the video.
-    */
 
     introContainer.style.opacity = "0";
     introContainer.style.visibility = "hidden";
 
-
     skipButton.style.opacity = "0";
     skipButton.style.pointerEvents = "none";
-
-
-    /*
-       Wait for the fade to completely finish.
-       Only THEN remove the intro and unlock the website.
-    */
 
     setTimeout(() => {
 
@@ -3391,26 +3046,14 @@ function closeIntro() {
 
         skipButton.style.display = "none";
 
-
-        /*
-           Always return the website to the very top.
-        */
-
         window.scrollTo({
             top: 0,
             left: 0,
             behavior: "instant"
         });
 
-
         document.documentElement.style.overflow = "";
         document.body.style.overflow = "";
-
-
-        /*
-           Double-check after the browser finishes
-           the transition.
-        */
 
         requestAnimationFrame(() => {
 
@@ -3427,10 +3070,6 @@ function closeIntro() {
 }
 
 
-/* =========================================================
-   SKIP BUTTON
-========================================================= */
-
 skipButton.addEventListener(
     "click",
     function(event) {
@@ -3444,10 +3083,6 @@ skipButton.addEventListener(
 );
 
 
-/* =========================================================
-   VIDEO ENDED
-========================================================= */
-
 introVideo.addEventListener(
     "ended",
     function() {
@@ -3457,10 +3092,6 @@ introVideo.addEventListener(
     }
 );
 
-
-/* =========================================================
-   EXTRA SCROLL SAFETY
-========================================================= */
 
 window.addEventListener(
     "scroll",
@@ -3480,10 +3111,6 @@ window.addEventListener(
     { passive: true }
 );
 
-
-/* =========================================================
-   SCROLL REVEAL
-========================================================= */
 
 const reveals =
     document.querySelectorAll(".reveal");
@@ -3518,10 +3145,6 @@ reveals.forEach(
 );
 
 
-/* =========================================================
-   IMAGE ERROR CHECK
-========================================================= */
-
 document
     .querySelectorAll("img")
     .forEach(img => {
@@ -3540,13 +3163,9 @@ document
 
     });
 
-/* =========================================================
-   INITIAL MEDIA CHECK
-========================================================= */
 
 checkVideoReady();
 checkAudioReady();
-
 
 </script>
 
